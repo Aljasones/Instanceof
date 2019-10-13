@@ -20,5 +20,13 @@ public class Main {
             System.out.println(result.getName());
 
         }
+        Product[] resultses = service.smartSearch("iPhone");
+        for (Product result : resultses) {
+            if (result == null){
+                continue;
+            }
+            System.out.println(result.getName());
+
+        }
     }
 }
